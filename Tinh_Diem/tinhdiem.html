@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính Điểm</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="tinhdiem.css">
+    <!-- <style>
+       body{
+         margin-left: 200px;
+         margin-right: 200px;
+       }
+       th:hover{
+         color: orangered;
+       }
+       td:hover{
+        color: orangered;
+       }
+       h1{
+         height: 70px;
+         background:#000;
+         line-height: 70px;
+         color: #fff;
+       }
+    </style> -->
+</head>
+<body>
+    <div id="nav">
+    <br>
+    <h1 style="text-align: center; font-size: 35px;" class="initialism">Tính Điểm Tích Lũy</h1>
+    <br>
+    <hr>
+    <br>
+  </div>
+  <div id="main">
+    <table class="table" >
+      <tr>
+        <th >STT</th>
+        <th>Đánh Giá Xếp Loại</th>
+        <th>Điểm Hệ 10</th>
+        <th>Thang Điểm Chữ</th>
+        <th>Số Tín Chỉ</th>
+      </tr>
+      <tr>
+        <tr>
+          <td rowspan="2">1</td>
+          <td rowspan="2">Giỏi</td>
+          <td>Từ 9.5 đến 10</td>
+          <td>A+</td>
+          <td><input type="number" class="form-control diem" min="0" max="150" data-DIEM="4"></td>
+        </tr>
+          <td>Từ 8.5 đến 9.4</td>
+          <td>A</td>
+          <td><input type="number" class="form-control diem" min="0" max="150" data-DIEM="3.8"></td>
+        </tr>
+        <tr>
+          <td rowspan="2">2</td>
+          <td rowspan="2">Khá</td>
+          <td>Từ 8.0 đến 8.4</td>
+          <td>B+</td>
+          <td><input type="number" class="form-control diem" min="0" max="150" data-DIEM="3.5"></td>
+        </tr>
+        <tr>
+          <td>Từ 7.0 đến 7.9</td>
+          <td>B</td>
+          <td><input type="number" class="form-control diem" min="0" max="150" data-DIEM="3"></td>
+        </tr>
+        <tr>
+          <td rowspan="2">3</td>
+          <td rowspan="2">Trung Bình</td>
+          <td>Từ 6.0 đến 6.9</td>
+          <td>C+</td>
+          <td><input type="number" class="form-control diem" min="0" max="150" data-DIEM="2.5"></td>
+        </tr>
+        <tr>
+          <td>Từ 5.5 đến 5.9</td>
+          <td>C</td>
+          <td>
+            <input type="number" class="form-control diem" min="0" max="150" data-DIEM="2"></td>
+        </tr>
+        <tr>
+          <td rowspan="2">2</td>
+          <td rowspan="2">Trung Bình Yếu</td>
+          <td>Từ 4.5 đến 5.4</td>
+          <td>D+</td>
+          <td><input type="number" class="form-control diem" min="0" max="150" data-DIEM="1.5"></td>
+        </tr>
+        <tr>
+          <td>Từ 4.0 đến 4.4</td>
+          <td>D</td>
+          <td><input type="number" class="form-control diem" min="0" max="150" data-DIEM="1"></td>
+        </tr>
+        <tr>
+        <td rowspan="2">1</td>
+        <td rowspan="2">Kém</td>
+        <td>Từ 2.0 đến 3.9</td>
+        <td>F+</td>
+        <td><input type="number" class="form-control diem" min="0" max="150" data-DIEM="0.5"></td>
+      </tr>
+      <tr>
+        <td>Từ 0.0 đến 1.9</td>
+        <td>F</td>
+        <td><input type="number" class="form-control diem" min="0" max="150" data-DIEM="0"></td>
+      </tr>
+    </table>
+    <p id="ketqua"></p>
+    <button onclick="myFunction()" class="btn btn-primary">Tính Điểm</button>
+    <br>
+    <br>
+    <script>
+      function myFunction(){
+        var ketQua = 0;
+        var x = document.getElementsByClassName("diem");
+        var soTC = 0;
+        for (var i=0; i<x.length; i++){
+          if(x[i].value){
+            soTC += parseInt(x[i].value);
+            var soTinChiCuaMon = parseInt(x[i].value);
+            var diemHe4 = parseFloat(x[i].getAttribute("data-DIEM"));
+            ketQua += diemHe4*soTinChiCuaMon;
+          }
+        }
+        document.getElementById("ketqua").innerHTML = "Kết Quả Là: " + ketQua/soTC;
+      }
+    </script>
+  </div>
+</body>
+</html>

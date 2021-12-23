@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <style>
+            body{
+            /* background-color: #81BEF7; */
+            margin-left: auto;
+            margin-right: auto;
+            width: 520px;
+            margin-top: 20px;
+            /* text-align: center; */
+        }
+            form{
+            background-color: #c98bc4;
+            height:400px;
+            padding: 20px;
+            width: 600px;
+        }
+        </style>
+        <script language="Javascript">
+
+        function a_plus_b(form) {
+            a = eval(form.a.value)
+            b = eval(form.b.value)
+            c=a+b
+            form.ans.value = c
+        }
+        function a_minus_b(form) {
+            a = eval(form.a.value)
+            b = eval(form.b.value)
+            c=a-b
+            form.ans.value = c
+        }
+
+        function a_times_b(form) {
+            a = eval(form.a.value)
+            b = eval(form.b.value)
+            c=a*b
+            form.ans.value = c
+        }
+
+        function a_div_b(form) {
+            a = eval(form.a.value)
+            b = eval(form.b.value)
+            c=a/b
+            form.ans.value = c
+        }
+
+        function a_pow_b(form) {
+            a = eval(form.a.value)
+            b = eval(form.b.value)
+            c=Math.pow(a,b)
+            form.ans.value = c
+        }
+        </script>
+</head>
+<body>
+    <form name="formx">
+        <h1><u>CALCULATION</u></h1>
+        <p><input type="text" size="4" value="12" name="a">
+            <input type="button" value="+"onclick="a_plus_b(this.form)">
+            <input type="button" value="-"onclick="a_minus_b(this.form)">
+            <input type="button" value="*"onclick="a_times_b(this.form)">
+            <input type="button" value="/"onclick="a_div_b(this.form)">
+            <input type="button" value="^"onclick="a_pow_b(this.form)">
+            <input type="number" size="4" value="3" name="b"> =
+            <input type="number" value="0" name="ans" size="9">
+        </p>
+    </form>
+</body>
+</html>

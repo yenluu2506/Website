@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!-- lang thuộc tính bên trong <html> thẻ, để khai báo ngôn ngữ của trang Web -->
+<html lang="en">
+<!-- phan mo dau -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yan Liu</title>
+    <!-- Sử dụng CSS trong HTML -->
+    <style>
+        body{
+            /* dat mau nen cho van ban (noi dung) */
+             background-color:white;
+             /* dat font chu */
+             font-family:courier;
+             /* dat mau van ban */
+             color:red;
+        }
+        /* tao duong vien xung quanh tat ca doan van */
+        p {border: 1px solid red;}
+        /* padding tao mot khoang dem */
+        p {
+        border: 2px solid powderblue;
+        padding: 30px;
+        /* margin xac dinh le ben ngoai duong vien */
+        
+      }
+    </style>
+</head>
+<!-- phan than -->
+<body>
+    <!-- Tieu de quan trong nhat -->
+    <h1>I Love You</h1>
+
+    <!-- thuoc ke ngang trong html -->
+    <hr>
+
+    <!-- doan van ban -->
+    <p>But, I'm No HoPe</p>
+
+    <!-- cac duong lien ket HTML -->
+    <a href="https://www.w3schools.com">This is a link</a>
+
+    <!--  xóa gạch chân khỏi liên kết. -->
+    <a href="html_images.asp" style="text-decoration:none;">HTML Images</a>
+
+    <!-- Sử dụng thuộc tính HTML chính xác để mở liên kết trong cửa sổ mới. -->
+    <a href="html_images.asp" target="_blank">HTML Images</a>
+
+    <!-- hinh anh -->
+    <img src="https://media.proprofs.com/images/QM/user_images/2503852/New%20Project%20(85)(120).jpg" alt="W3Schools.com" width="590" height="300">
+
+    <!-- Lam cho hinh anh tro thanh 1 lien ket -->
+    <a href="default.html"><img src="https://media.proprofs.com/images/QM/user_images/2503852/New%20Project%20(85)(120).jpg"></a>
+
+    <!-- Them chu giai (tieu de) vao lien ket -->
+    <a href="default.html" title="Home">Back to Home</a>
+
+    <!-- lien ket den 1 dia chi email -->
+    <a href="mailto:someone@example.com">Send email</a>
+
+    <!-- lien ket duoi dang nut -->
+    <button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+    <!-- Tieu de lien ket -->
+    <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+
+
+
+    <!-- style thuộc tính thêm phong cách cho một yếu tốmàu sắc, font chữ, kích thước,... -->
+
+    <!-- <strong>: In đậm chữ viết. -->
+    <strong>This text is important!</strong>
+
+    <!-- <i>: In nghiêng chứ viết. -->
+    <i>This text is italic</i>
+
+    <!-- <u>: Gạch chân chữ viết. -->
+
+    <!-- <strike>: Gạch ngang chữ viết. -->
+
+    <!-- <em>: Nhấn mạnh câu. -->
+    <em>This text is emphasized</em>
+
+    <!-- <code>: Định dạng cho một đoạn mã nào đó. -->
+    
+    <!-- phan tu rong dung de ngat dong -->
+    <p>Do la <br> mot tam anh</p>
+    
+    <!-- <mark>: Tô sáng chữ viết. -->
+    <p>Do not forget to buy <mark>milk</mark> today.</p>
+
+    <!-- <sub>: Định Dạng Chỉ Số Con -->
+    <p>This is <sub>subscripted</sub> text.</p>
+
+    <!-- <q>: them dau ngoac kep trong cau -->
+    <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+    <!-- <b>: chu tin dam -->
+    <b>This text is bold</b>
+
+    <!-- <ins>: chen van ban -->
+    <p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+
+    <!-- <sup>: van ban sieu cap -->
+    <p>This is <sup>superscripted</sup> text.</p>
+
+    <!-- <small> van ban nho hon -->
+    <small>This is some smaller text.</small>
+
+    <!-- <p>: doan van duoc hien thi tren 1 dong -->
+    <!-- to mau cho doan van -->
+    <p style="color:red;">This is a red paragraph.</p>
+
+    <!-- font chu cho doan van -->
+    <p style="font-family: courier;">This is a red paragraph.</p>
+
+    <!-- can le cho doan van -->
+    <p style="text-align: center;">This is a red paragraph.</p>
+
+    <!-- titlethuộc tính định nghĩa một số thông tin thêm về một phần tử -->
+    <p title="I'm a tooltip">This is a paragraph.</p>
+
+    <!-- doan van dai sẽ bảo toàn tất cả các khoảng trắng và dấu ngắt dòng khi phần tử được hiển thị.-->
+    <pre>
+        My Bonnie lies over the ocean.
+
+        My Bonnie lies over the sea.
+
+        My Bonnie lies over the ocean.
+
+        Oh, bring back my Bonnie to me.
+    </pre>
+
+    <!-- <blockquote> tử HTML xác định một phần được trích dẫn từ một nguồn khác. -->
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+    </blockquote>
+
+    <!-- <del>: gạch bỏ một dong -->
+    <p>My favorite color is <del> blue </del> red </p>
+
+    <!-- <bdo> Dao nguoc van ban -->
+    <bdo dir="rtl">What a beautiful day!</bdo>
+    
+    <!-- <abbr> để cung cấp chữ viết tắt được chỉ định của "WHO". -->
+    <p>The <abbr title="World Health Organization"> WHO</abbr> was founded in 1948.</p>
+    
+    <!-- <address>: the xac dinh thong tin lien he cua tac gia  -->
+    
+
+    <!-- <cite>: xac dinh tieu de cua 1 tac pham duoi dang in nghien -->
+    <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+    <address>
+        Written by John Doe.<br>
+        Visit us at:<br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+        USA
+    </address>
+    
+    
+</body>
+</html>

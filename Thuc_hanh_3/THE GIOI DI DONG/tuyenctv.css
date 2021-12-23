@@ -1,0 +1,127 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu2{
+    width: 1200px;
+    height: 50px;
+    margin: 5px auto;
+    padding-top:10px;
+    font-size: 12px;
+    line-height: 20px;
+}
+.menu2-main{
+    width: 800px;
+    height: auto;
+    float: left;
+}
+.menu2-td a{
+    padding: 0px 8px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(83, 83, 83);
+}
+.menu2-td a:hover{
+    color:rgb(8, 132, 214);
+}
+.style-td{
+    background-color: rgb(240, 208, 30);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.style-td a{
+    padding: 0px 8px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(83, 83, 83);
+}
+.menu2-main-join{
+    width: 200px;
+    height: auto;
+    float: right;
+    border-left: 1px solid silver;
+    padding-left: 10px;
+}
+.menu2-main-join td{
+    padding: 0px 5px;
+}
+.menu2-main-join td a{
+    text-decoration: none;
+    color: rgb(109, 108, 108);
+    font-size: 14px;
+}
+.menu2-main-join td a:hover{
+    color:rgb(8, 132, 214);
+}
+.main-container{
+    width: 800px;
+    height: auto;
+    margin: 0px auto;
+}
+.main-container-2 td{
+    padding: 10px 10px 0px 0px;
+}
+.main-container-3{
+    width: 800px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.content{
+    width: 600px;
+    height: auto;
+}
+.main-container h1{
+    margin: 10px 0px;
+}
+.main-container-2{
+    margin: 10px 0px 15px 0px;
+}
+.main-container-2 td{
+    color: rgb(153, 150, 150);
+}
+.main-container-2 a{
+    text-decoration: none;
+    color: #0eaec9;
+    font-weight: 600;
+}
+.content{
+    color: rgb(44, 43, 43);
+}
+.content p{
+    padding: 10px 0px;
+    line-height: 27px;
+}
+.content li{
+    padding: 3px 0px;
+    line-height: 25px;
+    margin-left: 20px;
+}
+.content a{
+    text-decoration: none;
+    color: #0eaec9;
+}
+.content h2{
+    padding: 10px 0px;
+}
+.call-to-action{
+    width: 800px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.call-to-action .click-me{
+    padding:14px 10px;
+    background-color: red;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-image: linear-gradient(180deg,#f76d1c, #ff910d);
+    color: #ffff00;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.call-to-action .click-me:hover{
+    cursor: pointer;
+}
